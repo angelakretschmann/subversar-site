@@ -1,1 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SUBVERSAR</title>
+  <meta name="description" content="Projeto intelectual dedicado à linguagem, à democracia e à produção simbólica contemporânea." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Tipos limpos e contemporâneos (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="/" aria-label="SUBVERSAR — Início">
+        <span class="brand__name">SUBVERSAR</span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#direito">Linguagem &amp; Direito</a>
+        <a href="#ensaios">Ensaios</a>
+        <a href="#colecoes">Coleções</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navpanel" data-navpanel hidden>
+      <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
+        <a href="#inicio">Início</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#direito">Linguagem &amp; Direito</a>
+        <a href="#ensaios">Ensaios</a>
+        <a href="#colecoes">Coleções</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" role="main">
+    <!-- 1) HERO / MANIFESTO -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <p class="eyebrow">Ecossistema editorial</p>
+        <h1 class="hero__title">SUBVERSAR</h1>
+        <p class="hero__subtitle">
+          Projeto intelectual dedicado à linguagem, à democracia e à produção simbólica contemporânea.
+        </p>
+        <p class="hero__lead">
+          Um espaço para publicações, ensaios e conversas que tratam o discurso como matéria pública —
+          com rigor, clareza e independência editorial.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="manifesto.html">Ler o Manifesto</a>
+          <a class="btn btn--ghost" href="#publicacoes">Ver publicações</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) PUBLICAÇÃO EM DESTAQUE -->
+    <section id="publicacoes" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Publicação em destaque</h2>
+          <p class="muted">Apresentação editorial — sem linguagem de vitrine.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__media" aria-label="Capa do livro (placeholder)">
+            <div class="cover" role="img" aria-label="Capa do livro"></div>
+          </div>
+
+          <div class="feature__body">
+            <h3 class="h3">Título da obra (placeholder)</h3>
+            <p class="text">
+              Um trecho curto (4–6 linhas) que introduz o tema, a hipótese e a relevância do texto.
+              Aqui a prioridade é a leitura: uma descrição informativa, sem urgência comercial.
+            </p>
+
+            <div class="links">
+              <a class="link" href="publicacoes.html">Conhecer a obra</a>
+              <a class="link" href="#" aria-disabled="true">Comprar edição física</a>
+              <a class="link" href="#" aria-disabled="true">Comprar e-book</a>
+            </div>
+
+            <p class="note">
+              * Os botões de compra serão ativados quando a página da obra estiver pronta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) PODCAST -->
+    <section id="podcast" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Podcast</h2>
+          <p class="muted">Último episódio publicado.</p>
+        </div>
+
+        <div class="pod">
+          <div class="pod__meta">
+            <h3 class="h3">Episódio #00 — Título (placeholder)</h3>
+            <p class="text">
+              Descrição curta (2–4 linhas). Contexto do episódio, tema central e por que vale ouvir.
+            </p>
+            <a class="link" href="podcast.html">Ver todos os episódios</a>
+          </div>
+
+          <div class="pod__player">
+            <!-- Substitua pelo embed real (Spotify/YouTube/etc.). -->
+            <div class="embed" role="group" aria-label="Player do podcast (placeholder)">
+              <p class="embed__label">Player incorporado (placeholder)</p>
+              <p class="embed__hint">Depois você cola aqui o iframe do Spotify/YouTube.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) ENSAIO RECENTE -->
+    <section id="ensaios" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Ensaio recente</h2>
+          <p class="muted">Leitura contínua — curadoria editorial.</p>
+        </div>
+
+        <article class="essay">
+          <h3 class="h3">Título do ensaio (placeholder)</h3>
+          <p class="text">
+            Trecho inicial do ensaio: uma abertura que indica o problema, o recorte e o gesto interpretativo.
+            O objetivo é orientar a leitura, não “vender” o texto.
+          </p>
+          <a class="btn btn--ghost" href="ensaios.html">Ler ensaio</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5) COLEÇÃO ATUAL (camisetas) -->
+    <section id="colecoes" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Coleção atual</h2>
+          <p class="muted">Presença material como extensão simbólica.</p>
+        </div>
+
+        <div class="collection">
+          <div class="collection__body">
+            <p class="quote">“A linguagem também ocupa o espaço público.”</p>
+            <p class="text">
+              A coleção aparece como gesto editorial: um modo de tornar visível o que já opera no discurso.
+              Sem preço na home, sem destaque agressivo.
+            </p>
+            <a class="btn btn--ghost" href="colecoes.html">Ver coleção</a>
+          </div>
+
+          <div class="collection__media" aria-label="Imagem da camiseta (placeholder)">
+            <div class="tee" role="img" aria-label="Imagem da camiseta"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO: Linguagem & Direito (atalho editorial) -->
+    <section id="direito" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Linguagem &amp; Direito</h2>
+          <p class="muted">Notas institucionais e temas de pesquisa — sem estética de serviço.</p>
+        </div>
+
+        <div class="cards">
+          <a class="card" href="linguagem-direito.html">
+            <h3 class="h3 h3--sm">Propriedade Intelectual</h3>
+            <p class="muted">Autoria, circulação e disputas simbólicas.</p>
+          </a>
+          <a class="card" href="linguagem-direito.html#autoria">
+            <h3 class="h3 h3--sm">Autoria e Originalidade</h3>
+            <p class="muted">Critérios, contextos e interpretação.</p>
+          </a>
+          <a class="card" href="linguagem-direito.html#plagio">
+            <h3 class="h3 h3--sm">Plágio</h3>
+            <p class="muted">Dimensão jurídica e discursiva.</p>
+          </a>
+          <a class="card" href="linguagem-direito.html#poder">
+            <h3 class="h3 h3--sm">Linguagem Jurídica e Poder</h3>
+            <p class="muted">Forma, autoridade e construção de verdade.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Contato</h2>
+          <p class="muted">Canal institucional — em breve com e-mail no domínio.</p>
+        </div>
+
+        <div class="contact">
+          <p class="text">
+            Enquanto o e-mail com domínio é configurado, você pode manter um endereço provisório aqui.
+          </p>
+          <p class="contact__line">
+            <span class="label">E-mail</span>
+            <span class="value">contato@subversar.com (em breve)</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="brand__name brand__name--sm">SUBVERSAR</span>
+        <span class="muted">© <span id="y"></span></span>
+      </div>
+      <div class="footer__right">
+        <a class="link" href="manifesto.html">Manifesto</a>
+        <a class="link" href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ano no footer
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // menu mobile
+    const btn = document.querySelector(".navtoggle");
+    const panel = document.querySelector("[data-navpanel]");
+    const links = panel ? panel.querySelectorAll("a") : [];
+
+    function closeMenu() {
+      if (!panel) return;
+      panel.hidden = true;
+      btn?.setAttribute("aria-expanded", "false");
+    }
+
+    btn?.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      if (panel) panel.hidden = isOpen;
+    });
+
+    links.forEach(a => a.addEventListener("click", closeMenu));
+    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
+  </script>
+</body>
+</html>
