@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedido recebido | SUBVERSAR</title>
+  <meta name="description" content="Seu pedido foi recebido pela Subversar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__name">SUBVERSAR</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html">Fundação</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="fundacao">
+      <div class="container reading">
+
+        <p class="eyebrow">Coleção 01</p>
+        <h1 class="page-title">Pedido recebido.</h1>
+
+        <p class="lead">
+          A linguagem também se realiza em gesto.
+        </p>
+
+        <p>
+          Seu pedido foi recebido pela Subversar. Em breve você receberá
+          uma mensagem de confirmação com a verificação de disponibilidade,
+          prazo estimado e os dados para pagamento via Pix (Nubank PJ).
+        </p>
+
+        <p>
+          Caso haja necessidade de produção sob demanda, o prazo médio é de até 15 dias
+          após a confirmação do pagamento. O envio será realizado via Correios.
+        </p>
+
+        <p>
+          Se você não receber retorno em até 24 horas úteis,
+          verifique sua caixa de spam ou entre em contato pelo e-mail institucional.
+        </p>
+
+        <div class="assinatura">
+          <p>
+            Subversar<br>
+            Projeto editorial dedicado à linguagem, à democracia e à produção simbólica contemporânea.
+          </p>
+        </div>
+
+        <div style="margin-top:40px;">
+          <a class="btn" href="index.html">Voltar ao início</a>
+          <a class="btn btn--ghost" href="colecoes.html" style="margin-left:10px;">Ver coleção</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="brand__name brand__name--sm">SUBVERSAR</span>
+        <span class="muted">© <span id="y"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

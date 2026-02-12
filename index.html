@@ -7,7 +7,6 @@
   <meta name="description" content="Projeto intelectual dedicado à linguagem, à democracia e à produção simbólica contemporânea." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Tipos limpos e contemporâneos (Inter) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,18 +16,18 @@
 
   <header class="header" role="banner">
     <div class="container header__inner">
-      <a class="brand" href="/" aria-label="SUBVERSAR — Início">
+      <a class="brand" href="index.html" aria-label="SUBVERSAR — Início">
         <span class="brand__name">SUBVERSAR</span>
       </a>
 
       <nav class="nav" aria-label="Menu principal">
         <a href="#inicio">Início</a>
-        <a href="#manifesto">Manifesto</a>
+        <a href="fundacao.html">Fundação</a>
         <a href="#publicacoes">Publicações</a>
         <a href="#podcast">Podcast</a>
         <a href="#direito">Linguagem &amp; Direito</a>
         <a href="#ensaios">Ensaios</a>
-        <a href="#colecoes">Coleções</a>
+        <a href="colecoes.html">Coleções</a>
         <a href="#contato">Contato</a>
       </nav>
 
@@ -40,19 +39,19 @@
     <div class="navpanel" data-navpanel hidden>
       <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
         <a href="#inicio">Início</a>
-        <a href="#manifesto">Manifesto</a>
+        <a href="fundacao.html">Fundação</a>
         <a href="#publicacoes">Publicações</a>
         <a href="#podcast">Podcast</a>
         <a href="#direito">Linguagem &amp; Direito</a>
         <a href="#ensaios">Ensaios</a>
-        <a href="#colecoes">Coleções</a>
+        <a href="colecoes.html">Coleções</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
   <main id="conteudo" role="main">
-    <!-- 1) HERO / MANIFESTO -->
+    <!-- 1) HERO -->
     <section id="inicio" class="hero">
       <div class="container">
         <p class="eyebrow">Ecossistema editorial</p>
@@ -66,7 +65,7 @@
         </p>
 
         <div class="hero__actions">
-          <a class="btn" href="manifesto.html">Ler o Manifesto</a>
+          <a class="btn" href="fundacao.html">Ler a Fundação</a>
           <a class="btn btn--ghost" href="#publicacoes">Ver publicações</a>
         </div>
       </div>
@@ -124,7 +123,6 @@
           </div>
 
           <div class="pod__player">
-            <!-- Substitua pelo embed real (Spotify/YouTube/etc.). -->
             <div class="embed" role="group" aria-label="Player do podcast (placeholder)">
               <p class="embed__label">Player incorporado (placeholder)</p>
               <p class="embed__hint">Depois você cola aqui o iframe do Spotify/YouTube.</p>
@@ -153,7 +151,7 @@
       </div>
     </section>
 
-    <!-- 5) COLEÇÃO ATUAL (camisetas) -->
+    <!-- 5) COLEÇÃO ATUAL -->
     <section id="colecoes" class="section section--alt">
       <div class="container">
         <div class="section__head">
@@ -178,7 +176,7 @@
       </div>
     </section>
 
-    <!-- BLOCO: Linguagem & Direito (atalho editorial) -->
+    <!-- BLOCO: Linguagem & Direito -->
     <section id="direito" class="section">
       <div class="container">
         <div class="section__head">
@@ -235,17 +233,15 @@
         <span class="muted">© <span id="y"></span></span>
       </div>
       <div class="footer__right">
-        <a class="link" href="manifesto.html">Manifesto</a>
+        <a class="link" href="fundacao.html">Fundação</a>
         <a class="link" href="contato.html">Contato</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // ano no footer
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // menu mobile
     const btn = document.querySelector(".navtoggle");
     const panel = document.querySelector("[data-navpanel]");
     const links = panel ? panel.querySelectorAll("a") : [];
