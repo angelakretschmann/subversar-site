@@ -4,98 +4,142 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Política de Privacidade | SUBVERSAR</title>
-  <meta name="description" content="Política de Privacidade da Subversar." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Política de Privacidade e tratamento de dados pessoais (LGPD)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 
 <body>
-  <main class="section">
-    <div class="container reading">
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-      <h1 class="page-title">Política de Privacidade</h1>
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SUBVERSAR — Início">
+        <span class="brand__name">SUBVERSAR</span>
+      </a>
 
-      <p>
-        A Subversar respeita a privacidade e a proteção de dados pessoais.
-        Esta política descreve como coletamos, utilizamos e protegemos as informações
-        fornecidas por usuários em nosso site.
-      </p>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html">Fundação</a>
+        <a href="index.html#publicacoes">Publicações</a>
+        <a href="index.html#podcast">Podcast</a>
+        <a href="index.html#direito">Linguagem &amp; Direito</a>
+        <a href="index.html#ensaios">Ensaios</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="mailto:contato@subversar.com">Contato</a>
+      </nav>
 
-      <h2>1. Dados coletados</h2>
-      <p>
-        Coletamos exclusivamente os dados fornecidos voluntariamente pelo usuário
-        por meio do formulário de pedido:
-      </p>
-      <ul>
-        <li>Nome</li>
-        <li>E-mail</li>
-        <li>WhatsApp</li>
-        <li>Cidade/UF</li>
-        <li>Endereço para envio</li>
-        <li>Informações relacionadas ao pedido</li>
-      </ul>
-
-      <h2>2. Finalidade do tratamento</h2>
-      <p>
-        Os dados são utilizados exclusivamente para:
-      </p>
-      <ul>
-        <li>Processamento e confirmação de pedidos</li>
-        <li>Comunicação com o cliente</li>
-        <li>Envio de produtos</li>
-        <li>Cumprimento de obrigações legais</li>
-      </ul>
-
-      <h2>3. Base legal</h2>
-      <p>
-        O tratamento de dados ocorre com fundamento no consentimento do titular
-        e na execução de contrato ou procedimentos preliminares relacionados ao pedido.
-      </p>
-
-      <h2>4. Compartilhamento de dados</h2>
-      <p>
-        A Subversar não comercializa dados pessoais.
-        Informações poderão ser compartilhadas apenas quando necessário para:
-      </p>
-      <ul>
-        <li>Serviços de envio (Correios ou transportadoras)</li>
-        <li>Serviços de pagamento</li>
-        <li>Cumprimento de obrigação legal</li>
-      </ul>
-
-      <h2>5. Armazenamento e segurança</h2>
-      <p>
-        Os dados são armazenados de forma segura e pelo tempo necessário
-        para cumprimento das finalidades descritas nesta política
-        ou conforme exigido por obrigações legais.
-      </p>
-
-      <h2>6. Direitos do titular</h2>
-      <p>
-        O titular poderá, a qualquer momento, solicitar:
-      </p>
-      <ul>
-        <li>Confirmação da existência de tratamento</li>
-        <li>Acesso aos dados</li>
-        <li>Correção de dados incompletos ou desatualizados</li>
-        <li>Exclusão de dados tratados com base no consentimento</li>
-      </ul>
-
-      <p>
-        Solicitações podem ser enviadas para:
-        <strong>contato@subversar.com</strong>
-      </p>
-
-      <h2>7. Alterações desta política</h2>
-      <p>
-        Esta política poderá ser atualizada a qualquer momento.
-        Recomendamos consulta periódica.
-      </p>
-
-      <p>
-        Última atualização: fevereiro de 2026.
-      </p>
-
+      <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+
+    <div class="navpanel" data-navpanel hidden>
+      <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html">Fundação</a>
+        <a href="index.html#publicacoes">Publicações</a>
+        <a href="index.html#podcast">Podcast</a>
+        <a href="index.html#direito">Linguagem &amp; Direito</a>
+        <a href="index.html#ensaios">Ensaios</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="mailto:contato@subversar.com">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="fundacao">
+      <div class="container reading">
+        <p class="eyebrow">Dados pessoais</p>
+        <h1 class="page-title">Política de Privacidade</h1>
+
+        <p class="lead">
+          O tratamento de dados aqui é mínimo, operacional e sem exploração comercial.
+        </p>
+
+        <h2 class="h2">1. O que coletamos</h2>
+        <p class="text">
+          Para viabilizar pedidos e contato, coletamos os dados informados por você no formulário:
+          nome, e-mail, WhatsApp, cidade/UF, modelo, tamanho, quantidade e endereço de envio, além de observações opcionais.
+        </p>
+
+        <h2 class="h2">2. Finalidade</h2>
+        <p class="text">
+          Usamos esses dados exclusivamente para: (i) responder seu pedido, (ii) confirmar disponibilidade e prazos,
+          (iii) enviar instruções de pagamento e (iv) viabilizar entrega via Correios.
+        </p>
+
+        <h2 class="h2">3. Base legal</h2>
+        <p class="text">
+          O tratamento se apoia na execução de procedimentos preliminares relacionados ao pedido e no legítimo interesse
+          de responder solicitações enviadas por você, conforme a LGPD.
+        </p>
+
+        <h2 class="h2">4. Compartilhamento</h2>
+        <p class="text">
+          Compartilhamos apenas o necessário para operação: por exemplo, dados de entrega para envio via Correios.
+          Não vendemos dados nem realizamos publicidade comportamental.
+        </p>
+
+        <h2 class="h2">5. Retenção</h2>
+        <p class="text">
+          Mantemos os dados pelo tempo necessário para tratar o pedido e cumprir obrigações legais e administrativas.
+        </p>
+
+        <h2 class="h2">6. Seus direitos</h2>
+        <p class="text">
+          Você pode solicitar confirmação de tratamento, acesso, correção, exclusão e outras medidas previstas na LGPD
+          pelo e-mail <a class="link" href="mailto:contato@subversar.com">contato@subversar.com</a>.
+        </p>
+
+        <h2 class="h2">7. Alterações</h2>
+        <p class="text">
+          Esta política pode ser atualizada a qualquer momento. Recomendamos consulta periódica.
+        </p>
+
+        <p class="muted">Última atualização: fevereiro de 2026.</p>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="brand__name brand__name--sm">SUBVERSAR</span>
+        <span class="muted">© <span id="y"></span></span>
+      </div>
+
+      <div class="footer__right">
+        <a class="link" href="fundacao.html">Fundação</a>
+        <a class="link" href="politica-de-privacidade.html" aria-current="page">Política de Privacidade</a>
+        <a class="link" href="mailto:contato@subversar.com">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    const btn = document.querySelector(".navtoggle");
+    const panel = document.querySelector("[data-navpanel]");
+
+    function closeMenu() {
+      if (!panel) return;
+      panel.hidden = true;
+      btn?.setAttribute("aria-expanded", "false");
+    }
+
+    btn?.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      if (panel) panel.hidden = isOpen;
+    });
+
+    panel?.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
+  </script>
 </body>
 </html>

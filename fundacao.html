@@ -8,50 +8,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
- <header class="header" role="banner">
-  <div class="container header__inner">
-    <a class="brand" href="index.html" aria-label="SUBVERSAR — Início">
-      <span class="brand__name">SUBVERSAR</span>
-    </a>
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SUBVERSAR — Início">
+        <span class="brand__name">SUBVERSAR</span>
+      </a>
 
-    <nav class="nav" aria-label="Menu principal">
-      <a href="index.html">Início</a>
-      <a href="fundacao.html">Fundação</a>
-      <a href="index.html#publicacoes">Publicações</a>
-      <a href="index.html#podcast">Podcast</a>
-      <a href="index.html#direito">Linguagem &amp; Direito</a>
-      <a href="index.html#ensaios">Ensaios</a>
-      <a href="colecoes.html">Coleções</a>
-      <a href="mailto:contato@subversar.com">Contato</a>
-    </nav>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html" aria-current="page">Fundação</a>
+        <a href="index.html#publicacoes">Publicações</a>
+        <a href="index.html#podcast">Podcast</a>
+        <a href="index.html#direito">Linguagem &amp; Direito</a>
+        <a href="index.html#ensaios">Ensaios</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="mailto:contato@subversar.com">Contato</a>
+      </nav>
 
-    <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+      <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-  <div class="navpanel" data-navpanel hidden>
-    <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
-      <a href="index.html">Início</a>
-      <a href="fundacao.html">Fundação</a>
-      <a href="index.html#publicacoes">Publicações</a>
-      <a href="index.html#podcast">Podcast</a>
-      <a href="index.html#direito">Linguagem &amp; Direito</a>
-      <a href="index.html#ensaios">Ensaios</a>
-      <a href="colecoes.html">Coleções</a>
-      <a href="mailto:contato@subversar.com">Contato</a>
-    </nav>
-  </div>
-</header>
+    <div class="navpanel" data-navpanel hidden>
+      <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html" aria-current="page">Fundação</a>
+        <a href="index.html#publicacoes">Publicações</a>
+        <a href="index.html#podcast">Podcast</a>
+        <a href="index.html#direito">Linguagem &amp; Direito</a>
+        <a href="index.html#ensaios">Ensaios</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="mailto:contato@subversar.com">Contato</a>
+      </nav>
+    </div>
+  </header>
 
   <main id="conteudo" class="fundacao" role="main">
-
     <!-- Aranha descendo (assinatura estrutural) -->
     <div class="spider-symbol" aria-hidden="true">
       <svg viewBox="0 0 100 120" width="34" height="40">
@@ -66,7 +65,7 @@
 
     <div class="container reading">
       <div class="page-top">
-        <a class="back" href="index.html#inicio">← Voltar para Início</a>
+        <a class="back" href="index.html">← Voltar ao Início</a>
       </div>
 
       <h1 class="page-title">Fundação</h1>
@@ -129,18 +128,8 @@
           com atuação em propriedade intelectual, linguagem, psicanálise e discurso jurídico.
         </p>
       </div>
-
-      <nav class="page-nav" aria-label="Navegação entre páginas">
-        <a class="page-nav__link" href="index.html#inicio">← Início</a>
-        <a class="page-nav__link" href="index.html#publicacoes">Publicações →</a>
-      </nav>
     </div>
   </main>
-
-  <div class="page-nav">
-  <a class="btn btn--ghost" href="index.html">← Voltar ao início</a>
-  <a class="btn" href="colecoes.html">Ir para Coleções →</a>
-</div>
 
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
@@ -148,9 +137,11 @@
         <span class="brand__name brand__name--sm">SUBVERSAR</span>
         <span class="muted">© <span id="y"></span></span>
       </div>
+
       <div class="footer__right">
-        <a class="link" href="index.html#inicio">Início</a>
-        <a class="link" href="index.html#contato">Contato</a>
+        <a class="link" href="fundacao.html" aria-current="page">Fundação</a>
+        <a class="link" href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a class="link" href="mailto:contato@subversar.com">Contato</a>
       </div>
     </div>
   </footer>

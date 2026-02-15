@@ -562,3 +562,36 @@ img{ max-width:100%; display:block; }
   flex-wrap:wrap;
   margin-top: 26px;
 }
+/* Podcast: tipografia mais confortável */
+.reading--pod{
+  max-width: 78ch;
+}
+.lead--pod{
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.cards--episodes{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card--episode{
+  padding: 18px;
+}
+
+@media (max-width: 980px){
+  .cards--episodes{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px){
+  .cards--episodes{ grid-template-columns: 1fr; }
+}
+.card--episode .text{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.cards--episodes{
+  gap: 28px;
+}
