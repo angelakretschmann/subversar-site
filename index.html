@@ -4,7 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SUBVERSAR</title>
-  <meta name="description" content="Projeto intelectual dedicado à linguagem, à democracia e à produção simbólica contemporânea." />
+
+  <!-- SEO básico -->
+  <meta name="description" content="Intervir na linguagem é intervir no mundo. A Subversar atua na disputa de sentidos que sustenta democracia, direito e poder." />
+
+  <!-- Open Graph (WhatsApp / Facebook / LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.subversar.com/" />
+  <meta property="og:title" content="SUBVERSAR" />
+  <meta property="og:description" content="Intervir na linguagem é intervir no mundo. A Subversar atua na disputa de sentidos que sustenta democracia, direito e poder." />
+  <meta property="og:image" content="https://www.subversar.com/images/og/subversar-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SUBVERSAR" />
+  <meta name="twitter:description" content="Intervir na linguagem é intervir no mundo. A Subversar atua na disputa de sentidos que sustenta democracia, direito e poder." />
+  <meta name="twitter:image" content="https://www.subversar.com/images/og/subversar-preview.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.subversar.com/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -145,7 +167,7 @@
         </div>
 
         <article class="essay">
-          <h3 class="h3">Cinco textos já disponíveis</h3>
+          <h3 class="h3">Confira os textos já disponíveis</h3>
           <p class="text">
             Ensaios sobre linguagem, poder, propriedade intelectual e estruturas simbólicas.
             A leitura é o centro — e cada texto abre o seu próprio percurso.
@@ -206,12 +228,14 @@
           </a>
         </div>
 
-     <p class="note" style="margin-top:18px;">
-  Para informações jurídicas:
-  <a href="https://www.kre.adv.br" target="_blank" rel="noopener">
-    www.kre.adv.br
-  </a>
-</p>
+        <p class="note" style="margin-top:18px;">
+          Para informações jurídicas:
+          <a href="https://www.kre.adv.br" target="_blank" rel="noopener">
+            www.kre.adv.br
+          </a>
+        </p>
+      </div>
+    </section>
 
     <!-- 7) Contato (HOME - resumo) -->
     <section id="contato" class="section">
@@ -236,7 +260,7 @@
           <div class="contact__line">
             <span class="label">WhatsApp</span>
             <span class="value">
-              <a class="link" href="https://wa.me/5551999121166" target="_blank">+55 51 99912-1166</a>
+              <a class="link" href="https://wa.me/5551999121166" target="_blank" rel="noopener">+55 51 99912-1166</a>
             </span>
           </div>
 
@@ -275,32 +299,4 @@
       <div class="footer__right">
         <a class="link" href="fundacao.html">Fundação</a>
         <a class="link" href="politica-de-privacidade.html">Política de Privacidade</a>
-        <a class="link" href="contato.html">Contato</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    const btn = document.querySelector(".navtoggle");
-    const panel = document.querySelector("[data-navpanel]");
-    const links = panel ? panel.querySelectorAll("a") : [];
-
-    function closeMenu() {
-      if (!panel) return;
-      panel.hidden = true;
-      btn?.setAttribute("aria-expanded", "false");
-    }
-
-    btn?.addEventListener("click", () => {
-      const isOpen = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!isOpen));
-      if (panel) panel.hidden = isOpen;
-    });
-
-    links.forEach(a => a.addEventListener("click", closeMenu));
-    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
-  </script>
-</body>
-</html>
+        <a class="link" href
