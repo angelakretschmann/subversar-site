@@ -9,133 +9,150 @@
 </head>
 
 <body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="header">
-  <div class="container header__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__name">SUBVERSAR</span>
-    </a>
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SUBVERSAR — Início">
+        <span class="brand__name">SUBVERSAR</span>
+      </a>
 
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="fundacao.html">Fundação</a>
-      <a href="podcast.html">Podcast</a>
-      <a href="colecoes.html">Coleções</a>
-      <a href="mailto:contato@subversar.com">Contato</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html">Fundação</a>
+        <a href="ensaios.html" aria-current="page">Ensaios</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="mailto:contato@subversar.com">Contato</a>
+      </nav>
 
-<main class="section">
-  <div class="container">
-
-    <div class="section__head">
-      <h1 class="h2">Ensaios</h1>
-      <p class="muted">
-        Textos de investigação teórica e intervenção discursiva.
-      </p>
+      <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <div class="product-grid">
+    <div class="navpanel" data-navpanel hidden>
+      <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html">Fundação</a>
+        <a href="ensaios.html" aria-current="page">Ensaios</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="mailto:contato@subversar.com">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-      <!-- 1 -->
-      <article class="product">
-        <div class="product__body">
-          <h3 class="h3">
-            <a href="ensaio-sustentabilidade.html">
-              Sustentabilidade da Cultura no Abismo da Propriedade Intelectual
-            </a>
-          </h3>
-          <p class="muted">Ângela Kretschmann</p>
-          <p class="text">
-            Uma reflexão sobre os limites estruturais da propriedade intelectual
-            diante da sustentabilidade cultural e dos modelos de circulação do conhecimento.
-          </p>
-        </div>
-      </article>
+  <main id="conteudo" class="section" role="main">
+    <div class="container">
 
-      <!-- 2 -->
-      <article class="product">
-        <div class="product__body">
-          <h3 class="h3">
-            <a href="ensaio-informacao.html">
-              Informação não é matéria nem energia
-            </a>
-          </h3>
-          <p class="muted">Ângela Kretschmann · Marcos Wachowicz</p>
-          <p class="text">
-            A partir de Norbert Wiener, o ensaio investiga a natureza jurídica da informação
-            e sua posição no sistema contemporâneo de produção simbólica.
-          </p>
-        </div>
-      </article>
+      <div class="section__head">
+        <h1 class="h2">Ensaios</h1>
+        <p class="muted">Textos de investigação teórica e intervenção discursiva.</p>
+      </div>
 
-      <!-- 3 -->
-      <article class="product">
-        <div class="product__body">
-          <h3 class="h3">
-            <a href="ensaio-marca.html">
-              A Marca e o Destino dos Signos
-            </a>
-          </h3>
-          <p class="muted">Ângela Kretschmann · Celso A. Nunes da Conceição</p>
-          <p class="text">
-            A marca como signo jurídico e operador simbólico que ultrapassa
-            o mercado e redefine os regimes de reconhecimento.
-          </p>
-        </div>
-      </article>
+      <div class="product-grid" aria-label="Lista de ensaios">
 
-      <!-- 4 -->
-      <article class="product">
-        <div class="product__body">
-          <h3 class="h3">
-            <a href="ensaio-consumidor.html">
-              O consumidor não nasce, ele é nomeado
-            </a>
-          </h3>
-          <p class="muted">Ângela Kretschmann · Gabriel Borges dos Santos</p>
-          <p class="text">
-            A categoria “consumidor” como construção discursiva,
-            analisada à luz da teoria crítica e do direito contemporâneo.
-          </p>
-        </div>
-      </article>
+        <article class="product">
+          <div class="product__body">
+            <h3 class="h3">
+              <a href="ensaio-sustentabilidade.html">Sustentabilidade da Cultura no Abismo da Propriedade Intelectual</a>
+            </h3>
+            <p class="muted">Ângela Kretschmann</p>
+            <p class="text">
+              Uma reflexão sobre os limites estruturais da propriedade intelectual
+              diante da sustentabilidade cultural e dos modelos de circulação do conhecimento.
+            </p>
+          </div>
+        </article>
 
-      <!-- 5 -->
-      <article class="product">
-        <div class="product__body">
-          <h3 class="h3">
-            <a href="ensaio-estado-fe.html">
-              Quando o Estado Quer Editar a Fé
-            </a>
-          </h3>
-          <p class="muted">Ângela Kretschmann</p>
-          <p class="text">
-            O Projeto de Lei 4606/2019 e os limites constitucionais
-            da intervenção estatal sobre textos religiosos.
-          </p>
-        </div>
-      </article>
+        <article class="product">
+          <div class="product__body">
+            <h3 class="h3">
+              <a href="ensaio-informacao.html">Informação não é matéria nem energia</a>
+            </h3>
+            <p class="muted">Ângela Kretschmann · Marcos Wachowicz</p>
+            <p class="text">
+              A partir de Norbert Wiener, o ensaio investiga a natureza jurídica da informação
+              e sua posição no sistema contemporâneo de produção simbólica.
+            </p>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__body">
+            <h3 class="h3">
+              <a href="ensaio-marca.html">A Marca e o Destino dos Signos</a>
+            </h3>
+            <p class="muted">Ângela Kretschmann · Celso A. Nunes da Conceição</p>
+            <p class="text">
+              A marca como signo jurídico e operador simbólico que ultrapassa
+              o mercado e redefine os regimes de reconhecimento.
+            </p>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__body">
+            <h3 class="h3">
+              <a href="ensaio-consumidor.html">O consumidor não nasce, ele é nomeado</a>
+            </h3>
+            <p class="muted">Ângela Kretschmann · Gabriel Borges dos Santos</p>
+            <p class="text">
+              A categoria “consumidor” como construção discursiva,
+              analisada à luz da teoria crítica e do direito contemporâneo.
+            </p>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product__body">
+            <h3 class="h3">
+              <a href="ensaio-estado-fe.html">Quando o Estado Quer Editar a Fé</a>
+            </h3>
+            <p class="muted">Ângela Kretschmann</p>
+            <p class="text">
+              O Projeto de Lei 4606/2019 e os limites constitucionais
+              da intervenção estatal sobre textos religiosos.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="margin-top:50px;">
+        <a class="btn btn--ghost" href="index.html">← Voltar ao início</a>
+      </div>
 
     </div>
+  </main>
 
-    <div style="margin-top:50px;">
-      <a class="btn btn--ghost" href="index.html">← Voltar ao início</a>
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="muted">© <span id="y"></span> Subversar</span>
     </div>
+  </footer>
 
-  </div>
-</main>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
 
-<footer class="footer">
-  <div class="container footer__inner">
-    <span class="muted">© <span id="y"></span> Subversar</span>
-  </div>
-</footer>
+    const btn = document.querySelector(".navtoggle");
+    const panel = document.querySelector("[data-navpanel]");
 
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
+    function closeMenu() {
+      if (!panel) return;
+      panel.hidden = true;
+      btn?.setAttribute("aria-expanded", "false");
+    }
 
+    btn?.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      if (panel) panel.hidden = isOpen;
+    });
+
+    panel?.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
+  </script>
 </body>
 </html>
