@@ -752,3 +752,8 @@ textarea.field__input{ resize: vertical; min-height: 110px; }
   .footer__right{ align-items: flex-start; }
   .spider-symbol{ top: 22px; right: 18px; }
 }
+
+
+/* Prancha editorial: exibe a composição completa, sem recorte */
+.product__figure--editorial{ background: #fff; }
+.product__figure--editorial .product__img{ object-fit: contain; }
