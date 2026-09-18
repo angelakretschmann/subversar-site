@@ -23,8 +23,25 @@
       <nav class="nav">
         <a href="index.html">Início</a>
         <a href="fundacao.html">Fundação</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="ensaios.html">Ensaios</a>
         <a href="colecoes.html">Coleções</a>
-        <a href="index.html#contato">Contato</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navpanel" data-navpanel hidden>
+      <nav class="container navpanel__inner" aria-label="Menu principal (mobile)">
+        <a href="index.html">Início</a>
+        <a href="fundacao.html">Fundação</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="ensaios.html">Ensaios</a>
+        <a href="colecoes.html">Coleções</a>
+        <a href="contato.html">Contato</a>
       </nav>
     </div>
   </header>
@@ -83,6 +100,24 @@
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    const btn = document.querySelector(".navtoggle");
+    const panel = document.querySelector("[data-navpanel]");
+
+    function closeMenu() {
+      if (!panel) return;
+      panel.hidden = true;
+      btn?.setAttribute("aria-expanded", "false");
+    }
+
+    btn?.addEventListener("click", () => {
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      if (panel) panel.hidden = isOpen;
+    });
+
+    panel?.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
   </script>
 </body>
 </html>

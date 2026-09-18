@@ -10,10 +10,10 @@
 
   <!-- Open Graph (WhatsApp / Facebook / LinkedIn) -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.subversar.com/" />
+  <meta property="og:url" content="https://subversar.com/" />
   <meta property="og:title" content="SUBVERSAR" />
   <meta property="og:description" content="Intervir na linguagem é intervir no mundo. A Subversar atua na disputa de sentidos que sustenta democracia, direito e poder." />
-  <meta property="og:image" content="https://www.subversar.com/images/og/subversar-preview.jpg" />
+  <meta property="og:image" content="https://subversar.com/images/og/subversar-preview.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="pt_BR" />
@@ -22,10 +22,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SUBVERSAR" />
   <meta name="twitter:description" content="Intervir na linguagem é intervir no mundo. A Subversar atua na disputa de sentidos que sustenta democracia, direito e poder." />
-  <meta name="twitter:image" content="https://www.subversar.com/images/og/subversar-preview.jpg" />
+  <meta name="twitter:image" content="https://subversar.com/images/og/subversar-preview.jpg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://www.subversar.com/" />
+  <link rel="canonical" href="https://subversar.com/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +45,6 @@
       <nav class="nav" aria-label="Menu principal">
         <a href="#inicio">Início</a>
         <a href="fundacao.html">Fundação</a>
-        <a href="#publicacoes">Publicações</a>
         <a href="podcast.html">Podcast</a>
         <a href="#direito">Linguagem &amp; Direito</a>
         <a href="ensaios.html">Ensaios</a>
@@ -62,7 +61,6 @@
       <nav class="navpanel__inner" aria-label="Menu principal (mobile)">
         <a href="#inicio">Início</a>
         <a href="fundacao.html">Fundação</a>
-        <a href="#publicacoes">Publicações</a>
         <a href="podcast.html">Podcast</a>
         <a href="#direito">Linguagem &amp; Direito</a>
         <a href="ensaios.html">Ensaios</a>
@@ -89,40 +87,12 @@
 
         <div class="hero__actions">
           <a class="btn" href="fundacao.html">Ler a Fundação</a>
-          <a class="btn btn--ghost" href="#publicacoes">Ver publicações</a>
+          <a class="btn btn--ghost" href="ensaios.html">Ler os ensaios</a>
         </div>
       </div>
     </section>
 
-    <!-- 2) PUBLICAÇÃO EM DESTAQUE -->
-    <section id="publicacoes" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="h2">Publicações</h2>
-          <p class="muted">Curadoria editorial — sem vitrine.</p>
-        </div>
-
-        <div class="feature">
-          <div class="feature__media" aria-label="Capa do livro (placeholder)">
-            <div class="cover" role="img" aria-label="Capa do livro"></div>
-          </div>
-
-          <div class="feature__body">
-            <h3 class="h3">Em breve</h3>
-            <p class="text">
-              Em breve os livros editados poderão ser adquiridos aqui também.
-            </p>
-
-            <div class="links">
-              <a class="link" href="#publicacoes" aria-disabled="true">Ver catálogo (em breve)</a>
-              <a class="link" href="colecoes.html">Ver Coleções</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3) PODCAST -->
+    <!-- 2) PODCAST -->
     <section id="podcast" class="section section--alt">
       <div class="container">
         <div class="section__head">
@@ -158,7 +128,7 @@
       </div>
     </section>
 
-    <!-- 4) ENSAIOS -->
+    <!-- 3) ENSAIOS -->
     <section id="ensaios" class="section">
       <div class="container">
         <div class="section__head">
@@ -177,7 +147,7 @@
       </div>
     </section>
 
-    <!-- 5) COLEÇÕES -->
+    <!-- 4) COLEÇÕES -->
     <section id="colecoes" class="section section--alt">
       <div class="container">
         <div class="section__head">
@@ -201,7 +171,7 @@
       </div>
     </section>
 
-    <!-- 6) Linguagem & Direito -->
+    <!-- 5) Linguagem & Direito -->
     <section id="direito" class="section">
       <div class="container">
         <div class="section__head">
@@ -237,7 +207,7 @@
       </div>
     </section>
 
-    <!-- 7) Contato (HOME - resumo) -->
+    <!-- 6) Contato (HOME - resumo) -->
     <section id="contato" class="section">
       <div class="container">
         <div class="section__head">
@@ -299,4 +269,33 @@
       <div class="footer__right">
         <a class="link" href="fundacao.html">Fundação</a>
         <a class="link" href="politica-de-privacidade.html">Política de Privacidade</a>
-        <a class="link" href
+        <a class="link" href="contato.html">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const btn = document.querySelector('.navtoggle');
+    const panel = document.querySelector('[data-navpanel]');
+
+    function closeMenu() {
+      if (!panel) return;
+      panel.hidden = true;
+      btn?.setAttribute('aria-expanded', 'false');
+    }
+
+    btn?.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      if (panel) panel.hidden = isOpen;
+    });
+
+    panel?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeMenu();
+    });
+  </script>
+</body>
+</html>

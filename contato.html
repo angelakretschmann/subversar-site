@@ -9,24 +9,43 @@
 </head>
 
 <body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="header">
+<header class="header" role="banner">
   <div class="container header__inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="SUBVERSAR — Início">
       <span class="brand__name">SUBVERSAR</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Menu principal">
       <a href="index.html">Início</a>
       <a href="fundacao.html">Fundação</a>
-      <a href="ensaios.html">Ensaios</a>
       <a href="podcast.html">Podcast</a>
+      <a href="index.html#direito">Linguagem &amp; Direito</a>
+      <a href="ensaios.html">Ensaios</a>
       <a href="colecoes.html">Coleções</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+    </nav>
+
+    <button class="navtoggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="navpanel" data-navpanel hidden>
+    <nav class="container navpanel__inner" aria-label="Menu principal (mobile)">
+      <a href="index.html">Início</a>
+      <a href="fundacao.html">Fundação</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="index.html#direito">Linguagem &amp; Direito</a>
+      <a href="ensaios.html">Ensaios</a>
+      <a href="colecoes.html">Coleções</a>
+      <a href="contato.html" aria-current="page">Contato</a>
     </nav>
   </div>
 </header>
 
-<main class="section">
+<main id="conteudo" class="section">
   <div class="container reading">
 
     <div class="page-top">
@@ -50,7 +69,7 @@
 
       <h3 class="h3" style="margin-top:30px;">WhatsApp</h3>
       <p>
-        <a href="https://wa.me/5551999121166" target="_blank">
+        <a href="https://wa.me/5551999121166" target="_blank" rel="noopener noreferrer">
           +55 51 99912-1166
         </a>
       </p>
@@ -82,6 +101,24 @@
 
 <script>
 document.getElementById("y").textContent = new Date().getFullYear();
+
+const btn = document.querySelector(".navtoggle");
+const panel = document.querySelector("[data-navpanel]");
+
+function closeMenu() {
+  if (!panel) return;
+  panel.hidden = true;
+  btn?.setAttribute("aria-expanded", "false");
+}
+
+btn?.addEventListener("click", () => {
+  const isOpen = btn.getAttribute("aria-expanded") === "true";
+  btn.setAttribute("aria-expanded", String(!isOpen));
+  if (panel) panel.hidden = isOpen;
+});
+
+panel?.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
 </script>
 
 </body>
